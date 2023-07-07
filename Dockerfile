@@ -3,7 +3,7 @@ ENV WEB_ROOT=/app/AnimeTrix
 RUN apk add --no-cache git curl
 RUN curl -sf https://gobinaries.com/tj/node-prune | sh
 WORKDIR /app
-RUN git clone https://github.com/ShivaBhattacharjee/AnimeTrix.git
+RUN git clone https://github.com/Delivery-God/AnimeTrix.git
 WORKDIR $WEB_ROOT
 RUN find .  -type f -exec sed -i 's/\r$//' {} +
 RUN npm install --verbose
